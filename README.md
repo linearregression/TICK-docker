@@ -4,6 +4,13 @@ Run the complete TICK stack using this [docker-compose](https://docs.docker.com/
 By using docker-compose all four official TICK stack images are started and linked together.
 To know more about the individual components see [this](https://influxdata.com/)
 
+
+## Prerequistes
+
+You need to have docker-compose installed on your machine.
+https://docs.docker.com/compose/install/
+
+
 ## Usage
 
 Start all the images as follows:
@@ -12,6 +19,8 @@ Start all the images as follows:
     cd 1.0/
     # Start all images in the background
     docker-compose up -d
+
+    Note: unset DOCKER_HOST because docker-compose uses this.
 
 ### Check that InfluxDB works:
 
