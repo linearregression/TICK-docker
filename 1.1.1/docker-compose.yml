@@ -21,7 +21,7 @@ services:
       - "8086:8086"
   # Define a Chronograf service
   chronograf:
-    image: chronograf:1.1.0-beta6
+    image: chronograf:1.0.0-rc1
     volumes:
       - ./data/chronograf:/var/lib/chronograf
     ports:
